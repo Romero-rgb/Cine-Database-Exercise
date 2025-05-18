@@ -11,5 +11,8 @@ public class Constants {
     public static final Object TYPE_COMMERCIAL = null;
     public static final String NEGATIVE_TICKETS = null;
     public static final double TICKET_PRICE = 7.52;
+    public static final String NEGATIVE_COST = null;
+    public static final String CREW_NEGATIVE = null;
+    
     
 }
