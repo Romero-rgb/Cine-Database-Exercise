@@ -1,18 +1,28 @@
+/**
+ * Represents a film studio with a name, city, geographic coordinates, and a collection of movies.
+ * Provides methods to manage movies, retrieve studio information, and calculate box office results.
+ * 
+ * <p>
+ * The Studio class ensures that the studio's name and city are not null or empty.
+ * Movies are managed in a map, keyed by their names, and can be added, updated, or retrieved.
+ * </p>
+ * 
+ * <p>
+ * Example usage:
+ * <pre>
+ *     Studio studio = new Studio("DreamWorks", "Los Angeles", -118.25, 34.05);
+ *     studio.addMovie(new Movie("Shrek", ...));
+ * </pre>
+ * </p>
+ * 
+ * @author Antonio
+ */
+
 package dev.antonio.cine.model;
 
 import java.util.*;
 import dev.antonio.cine.util.*;
 
-/**
- * Represents a film studio with geographic coordinates and movies inventory
- * management.
- * <p>
- * This class manages a collection of movies and provides functionality to add,
- * update,
- * and apply box office calculate to movies. It also tracks the studio's
- * location using geographic coordinates.
- * </p>
- */
 
 public class Studio {
     private String name;
@@ -128,7 +138,7 @@ public class Studio {
                 moviesString.append(",")
                 .append(Constants.TYPE_DIRECTOR)
                 .append(",")
-                .append(director.getNameDirector());
+                .append(director.getDirector());
             } else if (movie instanceof MovieCommercial) {
                 MovieCommercial commercial = (MovieCommercial) movie;
                 moviesString.append(",")
@@ -150,7 +160,7 @@ public class Studio {
         } else if (tickets < 0) {
             throw new IllegalArgumentException(Constants.NEGATIVE_TICKETS);
         } else {
-            return getMovie(movieName).getCost() - (Constants.TICKET_PRICE * tickets);
+            return  (Constants.TICKET_PRICE * tickets) - getMovie(movieName).getCost();
         }
     }
 

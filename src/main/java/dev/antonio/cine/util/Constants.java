@@ -13,6 +13,12 @@ public class Constants {
     public static final double TICKET_PRICE = 7.52;
     public static final String NEGATIVE_COST = null;
     public static final String CREW_NEGATIVE = null;
+    public static final String DATE_FORMAT = "yyyyMMdd";
+    public static final String ERROR_EXPIRATION_DATE_NULL_OR_EMPTY = null;
+    public static final String ERROR_EXPIRATION_DATE_PAST = null;
+    public static final String ERROR_EXPIRATION_DATE_FORMAT = null;
+    public static final int DAYS_CLOSE_TO_RELEASE = 7;
+    public static final String COUNTRY_NULL = null;
     
     
 }
