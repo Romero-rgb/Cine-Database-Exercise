@@ -87,5 +87,7 @@ public abstract class Movie implements BoxOfficeCalculable {
     public String toString() {
         return movieToString() + "\n";
     }
+
+    
     
 }

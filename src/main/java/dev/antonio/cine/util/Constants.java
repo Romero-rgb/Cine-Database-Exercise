@@ -19,6 +19,10 @@ public class Constants {
     public static final String ERROR_EXPIRATION_DATE_FORMAT = null;
     public static final int DAYS_CLOSE_TO_RELEASE = 7;
     public static final String COUNTRY_NULL = null;
+    public static final String STUDIO_NULL = null;
+    public static final char[] EMPTY_SPACE = null;
+    public static final char[] SEPARATOR = null;
+    public static final String START_MENU_HEADER = null;
     
     
 }

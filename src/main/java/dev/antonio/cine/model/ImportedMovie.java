@@ -1,3 +1,12 @@
+
+/**
+ * Represents an imported movie, encapsulating a {@link Movie} object and its country of origin.
+ * <p>
+ * This class ensures that both the movie and the country of origin are valid and not null.
+ * </p>
+ *
+ * @author Antonio
+ */
 package dev.antonio.cine.model;
 
 import dev.antonio.cine.util.Constants;
